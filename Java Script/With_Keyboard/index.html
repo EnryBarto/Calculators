@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Calculator | by EnryBarto</title>
+
+		<!-- LINK -->
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- SCRIPT -->
+		<script type="text/javascript" src="js.js"></script>
+
+		<!-- META -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+
+	</head>
+
+	<body>
+		<h1 class="title">Calcolatrice</h1>
+		<h3>Attenzione!</h3>
+		<p>Questa calcolatrice permette di eseguire solo operazioni con due numeri (es. 10 + 25)</p>
+		
+		<!-- CALCULATOR'S BODY -->
+		<div class="calculator">
+			<input type="text" name="display" id="display" readonly><br>
+			<tr>
+				<td><button class="button op" onclick="C()">C</button></td>
+				<td><button class="button op" onclick="opadd()">+</button></td>
+				<td><button class="button op" onclick="opsub()">-</button></td>
+				<td><button class="button op" onclick="opmol()">x</button></td>
+			</tr><br>
+			<tr>
+				<td><button class="button" onclick="num1()">1</button></td>
+				<td><button class="button" onclick="num2()">2</button></td>
+				<td><button class="button" onclick="num3()">3</button></td>
+				<td><button class="button op" onclick="opdiv()">/</button></td>
+			</tr><br>
+			<tr>
+				<td><button class="button" onclick="num4()">4</button></td>
+				<td><button class="button" onclick="num5()">5</button></td>
+				<td><button class="button" onclick="num6()">6</button></td>
+				<td><button class="button op" onclick="opexp()">^</button></td>
+			</tr><br>
+			<tr>
+				<td><button class="button" onclick="num7()">7</button></td>
+				<td><button class="button" onclick="num8()">8</button></td>
+				<td><button class="button" onclick="num9()">9</button></td>
+				<td><button class="button op" onclick="oprad()"><sup class="exp">2</sup>&#8730;</button></td>
+			</tr><br>
+			<tr>
+				<td><button class="button" onclick="num0()">0</button></td>
+				<td><button class="button" onclick="num00()">00</button></td>
+				<td><button class="button" onclick="point()">,</button></td>
+				<td><button class="button op" onclick="piumeno()">&plusmn;</button></td>
+			</tr><br>
+			<tr>
+				<td><button class="button op exe" onclick="opexe()">=</button></td>
+				<td><button class="button op" onclick="Ans()">Ans</button></td>
+			</tr><br>
+		</div>
+		
+		<br>
+
+		<!-- ERRORS -->
+		<div class="errors">
+			<h3>Errori:</h3>
+			<p class="txt">• <b><i>"NaN"</i></b>:<br>
+				Sono stati inseriti due o pi&ugrave; punti;</p>
+			<p class="txt">• <b><i>"Radq. num. neg."</i></b>:<br>
+				La radice quadrata di un numero negativo non esiste;</p>
+			<p class="txt">• <b><i>"Imp. div. n per 0"</i></b>:<br>
+				&Egrave; impossibile dividere un numero per 0.</p>
+		</div>
+	</body>
+	
+	<!-- FOOTER -->
+	<footer>
+		<h5>Source code: <a href="https://github.com/EnryBarto/Keyboard_calculator" class="link" title="Vai al codice sorgente su GitHub">GitHub</a></h5> 
+		<h5>Enrico Bartocetti, 2^BIN</h5>
+	</footer>
+
+</html>

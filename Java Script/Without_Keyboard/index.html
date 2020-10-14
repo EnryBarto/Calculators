@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Calculator | by EnryBarto</title>
+
+		<link rel="icon" type="image/jpg" href="favicon.jpg">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type="text/javascript" src="js.js"></script>
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<h1 class="title">Calcolatrice</h1>
+
+		<button title="Clicca per aprire la calcolatrice" class="calculate" onclick="Calculator();"/>APRI CALCOLATRICE</button>
+
+		<br><br>
+
+		<div id="instructions">
+			<h4>Istruzioni per l'uso</h4>
+			<p class="txt">• Utilizzare il punto in sostituzione alla virgola (10,5 → 10.5);<p>
+			<p class="txt">• Quando richiesto, inserire il primo numero;<p>
+			<p class="txt">• Quando richiesto, inserire l'operatore:
+				<br><nobr>&emsp;+ → Addizione</nobr>
+				<br><nobr>&emsp;- → Sottrazione</nobr>
+				<br><nobr>&emsp;* → Moltiplicazione</nobr>
+				<br><nobr>&emsp;/ → Divisione</nobr>
+				<br><nobr>&emsp;^ → Potenza</nobr>
+				<br>&emsp;radQ → Radice quadrata<p>
+			<p class="txt"><b><i>N.B.:</b> In caso di potenza il primo numero rappresenta la base e il secondo numero rappresenta l'esponente.</i></p>
+			<p class="txt">• Quando richiesto, inserire il secondo numero;<p>
+			<p class="txt">• Per aprire la calcolatrice cliccare sul pulsante qui sotto o a inizio pagina.<p>
+			<input class="calculate" type="button" value="APRI CALCOLATRICE" title="Clicca per aprire la calcolatrice" onclick="Calculator();"/>
+			<h4>Errori:</h4>
+			<p class="txt">• <b><i>"Il risultato è: NaN"</i></b>:<br>
+				Nel campo dei numeri è stato inserito testo o simboli diversi da un numero;</p>
+			<p class="txt">• <b><i>"Operatore non riconosciuto"</i></b>:<br>
+				L'operatore inserito non è riconosciuto: consultare l'elenco di operatori disponibili;</p>
+			<p class="txt">• <b><i>"Infinity"</i></b>:<br>
+				Il risultato supera le 310 cifre: eseguire i calcoli con numeri più bassi;</p>
+			<p class="txt">• <b><i>"La radice quadrata di un numero negativo non esiste"</i></b>:<br>
+				La radice quadrata di un numero negativo non esiste: utilizzare solo numeri positivi (maggiori o uguali a 0).</p>
+		</div>
+	</body>
+
+	<footer>
+		<h5>Source code: <a href="https://github.com/EnryBarto/JS_calculator" class="link" title="Vai al codice sorgente su GitHub">GitHub</a></h5> 
+		<h5>Enrico Bartocetti, 2^BIN</h5>
+	</footer>
+
+</html>
